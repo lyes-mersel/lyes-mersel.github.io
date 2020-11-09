@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>My First Page</title>
+	<link rel="icon" type="image/png" href="data/ESI.png">
+	<script src="https://kit.fontawesome.com/28533e271e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<center>The header</center><hr>
+	</header>
+	
+	<main>
+		<p>Add more interseting thing in the main</p>
+		<h1>IMAGES:</h1>
+		<figure>
+			<img src="data/photo_identité.png" alt="ME">
+			<figcaption>Default Image Size</figcaption>
+		</figure>
+		<figure>
+			<img src="data/photo_identité.png" height="500" alt="ME">
+			<img src="data/photo_identité.png" width="400" alt="ME">
+			<figcaption>Set Image Size</figcaption>
+		</figure>
+		<figure>
+			<img src="data/photo_identité.png" width="25%" alt="ME">
+			<figcaption>Relative Image Size</figcaption>
+		</figure><br>
+
+		<!-- Using Front Awesome -->
+		<hr><h1>FONT AWESOME + LINKS:</h1>
+		<i class="fas fa-chess"></i> <!-- Default size -->
+		<i class="fas fa-chess fa-xs"></i> <!-- extra small -->
+		<i class="fas fa-chess fa-md"></i> <!-- medium -->
+		<i class="fas fa-chess fa-lg"></i> <!-- large -->
+		<i class="fas fa-chess fa-2x"></i> <!-- bigger -->
+		<i class="fas fa-chess fa-5x"></i> <!-- bigger -->
+		<i class="fas fa-chess fa-10x"></i> <!-- bigger -->
+		<br>
+		<a href="http://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook fa-10x"></i></a>
+		<a href="http://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter fa-10x"></i></a><br><br>
+		<!-- <nav> tag defines a set(ensemble) of navigation links -->
+		<nav>
+  			<a href="./data/">Data</a> |
+  			<a href="./documentation/">Documentation</a> |
+  			<a href="./html/">HTML</a> |
+  			<a href="./css/">CSS</a> |
+  			<a href="./js/">JavaScript</a> |
+  			<a href="./python/">Python</a>
+		</nav><br>
+
+		<!-- (VIDEO/AUDIO) attributes: autoplay, controls, loop, buffered, muted, volume,... -->
+		<h1>VIDEOS:</h1>
+		<video width="800" controls loop>
+			<source src="data/video_1.mp4" type="video/mp4">
+			Your browser does not support the video element
+		</video><br><br><br>
+
+		<h1>AUDIOS:</h1>
+		<audio autoplay="" controls="">
+			<source src="data/audio_1.mp3" type="audio/mp3">
+			Your browser does not support the audio element
+		</audio><br>
+		<audio controls loop>
+			<source src="data/audio_1.mp3#t=30,45" type="audio/mp3">
+			<source src="data/audio_1.ogg#t=30,45" type="audio/ogg">
+			Your browser does not support the audio element
+		</audio><br><br><br>
+
+		<!-- TABLES -->
+		<h1>TABLES:</h1>
+		<table border="2">
+			<caption>Table number 1:</caption>
+			<tr><th>---</th><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr>
+			<tr><th>Row 1:</th><td>One</td><td>Two</td><td>Three</td></tr>
+			<tr><th>Row 2:</th><td>Four</td><td>Five</td><td>Six</td></tr>
+			<tr><th>Row 3:</th><td>Seven</td><td>Eight</td><td>Nine</td></tr>
+		</table><br>
+		<!-- HTML<caption> "align" attribute values : top(defaut), left, right, bottom -->
+		<table border="1">
+			<caption align="bottom">Table number 2:</caption>
+			<tr>
+				<th>Child's Name: </th><th>Parent's Name: </th>
+			</tr>
+			<tr>
+				<td rowspan="2">Enfant 1</td><td>Père</td>
+			</tr>
+			<tr>
+				<td>Mère</td>
+			</tr>
+			<tr>
+				<td>Enfant 2</td><td>Mère</td>
+			</tr>
+			<tr>
+				<td rowspan="2">Enfant 3</td><td>Père</td>
+			</tr>
+			<tr>
+				<td>Mère</td>
+			</tr>
+		</table><br>
+
+		<!-- (MORE) -->
+		<h1>BUTTONS:</h1>
+		<button>Click Here!</button>
+		<button type="button" onclick="alert('Hello World!')">CLICK ME !</button><br>
+
+		<h1>METERS:</h1>
+		<div>
+			<label>Disque Local C:</label>
+			<meter id="disc_c" min="0" max="150" value="90">90 out of 150 (GB)</meter><br>
+			<label>Disque Local D:</label>
+			<meter id="disc_d" value="0.5">50%</meter><br>
+			<label>min=20 max=60 value=30 (25%):</label>
+			<meter id="pourct" min="20" max="60" value="30">25%</meter>
+		</div>
+
+		<h1>PROGRESS:</h1>
+		<label>Downloading Progress:</label>
+		<progress value="75" max="100"> 75% </progress>
+
+		<h1>IFRAME:</h1>
+		<iframe src="https://www.esi.dz/" title="ESI" height="600" width="1200"></iframe>
+
+
+	</main>
+
+	<footer>
+		<hr><center>The footer</center>
+	</footer>
+</body>
+</html>
